@@ -1,0 +1,39 @@
+.inputContainer {
+  display: flex;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  &::placeholder {
+    color: #999;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+}
+
+.buttonSearch {
+  border: none;
+  background-color: #f0f8ff;
+  width: 30px;
+  height: 30px;
+  &:hover {
+    cursor: pointer;
+  }
+}

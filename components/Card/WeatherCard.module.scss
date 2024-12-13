@@ -1,0 +1,91 @@
+.weatherCardContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.loadingText,
+.errorText {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+.errorText {
+  color: #ff4444;
+}
+
+.cardGrid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.cityName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+.weatherDescription {
+  font-size: 1rem;
+  color: #666;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+.temperature {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.update {
+  margin-top: 2rem;
+  color: #f1eeee;
+  background-color: #007bff;
+  border: none;
+  width: 80px;
+  height: 35px;
+  border-radius: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.remove {
+  color: #f1eeee;
+  background-color: #dd2727;
+  border: none;
+  width: 80px;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cardLink {
+  text-decoration: none;
+}
